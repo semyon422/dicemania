@@ -1,0 +1,9 @@
+#!/bin/bash
+rm ../dicemania.love
+rm ../dicemania-win64.zip
+zip -r ../dicemania.love *
+cat ../love-11.4-win64/love.exe ../dicemania.love > ../dicemania-win64/dicemania.exe
+cp ../dicemania.love ../dicemania-win64/dicemania.love
+cd ..
+zip -r dicemania-win64.zip dicemania-win64
+cd dicemania
